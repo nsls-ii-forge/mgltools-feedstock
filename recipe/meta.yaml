@@ -8,8 +8,6 @@ package:
 source:
   - url: http://{{ name }}.scripps.edu/downloads/downloads/tars/releases/REL{{ version }}/{{ name }}_x86_64Linux2_{{ version }}.tar.gz  # [linux]
     sha256: d4f1493a175cd67cf2f54e6f585c430e1093d3bbd33817b82345dc2a58676a0f  # [linux]
-    patches:
-      - install.sh.patch
   - url: http://{{ name }}.scripps.edu/downloads/downloads/tars/releases/REL{{ version }}/{{ name }}_i86Darwin9_{{ version }}.tar.gz  # [osx]
     sha256: 15f9f64015270bfa6fa3091c7278e442a77e73d5db6d20ffe45ae019294a3d17  # [osx]
 

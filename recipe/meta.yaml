@@ -16,7 +16,7 @@ build:
   skip: True  # [win]
 
 requirements:
-  build:
+  host:
     - conda-build <3.18.12
 
 test:

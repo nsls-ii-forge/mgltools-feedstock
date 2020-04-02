@@ -8,6 +8,9 @@ UTILITIES_HOME=$PREFIX/${UTILITIES_RPATH}
 ln -s $UTILITIES_HOME/prepare_ligand4.py $BINARY_HOME/prepare_ligand4.py
 ln -s $UTILITIES_HOME/prepare_receptor4.py $BINARY_HOME/prepare_receptor4.py
 
+mkdir -p $PREFIX/etc/conda/activate.d
+mkdir -p $PREFIX/etc/conda/deactivate.d
+
 ACTIVATE=$PREFIX/etc/conda/activate.d/autodocktools.sh
 DEACTIVATE=$PREFIX/etc/conda/deactivate.d/autodocktools.sh
 

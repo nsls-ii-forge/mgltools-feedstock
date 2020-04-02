@@ -15,10 +15,6 @@ build:
   number: 0
   skip: True  # [win]
 
-requirements:
-  host:
-    - conda-build <3.18.12
-
 test:
   commands:
     - pythonsh --help

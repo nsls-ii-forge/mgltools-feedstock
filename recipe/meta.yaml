@@ -22,7 +22,7 @@ test:
     - prepare_receptor4.py
     - pythonsh --help
     - test ! -z $AUTODOCKTOOLS_UTIL  # [not win]
-    - test $AUTODOCKTOOLS_UTIL == ${CONDA_PREFIX}/MGLToolsPckgs/AutoDockTools/Utilities24 # [not win]
+    - test $AUTODOCKTOOLS_UTIL == ${CONDA_PREFIX}/MGLToolsPckgs/AutoDockTools/Utilities24  # [not win]
 
 about:
   home: http://mgltools.scripps.edu

@@ -12,7 +12,7 @@ source:
     sha256: 15f9f64015270bfa6fa3091c7278e442a77e73d5db6d20ffe45ae019294a3d17  # [osx]
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win]
 
 test:
@@ -22,6 +22,7 @@ test:
     - prepare_receptor4.py
     - pythonsh --help
     - test ! -z $AUTODOCKTOOLS_UTIL  # [not win]
+    - test $AUTODOCKTOOLS_UTIL == ${CONDA_PREFIX}/MGLToolsPckgs/AutoDockTools/Utilities24 # [not win]
 
 about:
   home: http://mgltools.scripps.edu

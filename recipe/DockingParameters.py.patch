@@ -1,0 +1,13 @@
+diff --git a/AutoDockTools/DockingParameters.py b/AutoDockTools/DockingParameters.py
+index 34f42d6..1dd10e5 100644
+--- a/AutoDockTools/DockingParameters.py
++++ b/AutoDockTools/DockingParameters.py
+@@ -1256,7 +1256,7 @@ class DockingParameters(UserDict.UserDict):
+     
+ 
+     def _make_string(self, p, val_str):
+-        return "%s %s%s# %s\n" % (p['keyword'],
++        return "%s %s%s # %s\n" % (p['keyword'],
+                                   val_str,
+                                   " "*(36 -(len(p['keyword'])+len(val_str))),
+                                   p['comment'])

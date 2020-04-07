@@ -5,7 +5,9 @@ BINARY_HOME=$PREFIX/bin
 UTILITIES_RPATH=MGLToolsPckgs/AutoDockTools/Utilities24
 UTILITIES_HOME=$PREFIX/${UTILITIES_RPATH}
 
-patch < ${RECIPE_DIR}/DockingParameters.py.patch
+cd $PREFIX/MGLToolsPckgs/
+patch -p1 < ${RECIPE_DIR}/DockingParameters.py.patch
+cd -
 
 ln -s $UTILITIES_HOME/prepare_ligand4.py $BINARY_HOME/prepare_ligand4.py
 ln -s $UTILITIES_HOME/prepare_receptor4.py $BINARY_HOME/prepare_receptor4.py

@@ -13,7 +13,7 @@ source:
     sha256: 15f9f64015270bfa6fa3091c7278e442a77e73d5db6d20ffe45ae019294a3d17  # [osx]
 
 build:
-  number: 3
+  number: 4
   skip: True  # [not linux]
 
 test:
